@@ -1,6 +1,6 @@
 import React from 'react';
-import QRCode from 'qrcode.react';
-import './QRCodeDisplay.css';
+import { QRCodeSVG } from 'qrcode.react';
+import '../QRCodeDisplay.css';
 
 function QRCodeDisplay({ formData }) {
   const handleLongPress = () => {
@@ -9,7 +9,7 @@ function QRCodeDisplay({ formData }) {
 
   return (
     <div className="qr-container">
-      <QRCode value={JSON.stringify(formData)} size={200} />
+      <QRCodeSVG value={JSON.stringify(formData)} size={200} />
       <div onContextMenu={handleLongPress}>
         <p>Long press on the QR code to edit details.</p>
       </div>

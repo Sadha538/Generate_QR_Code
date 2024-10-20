@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import QRCodeDisplay from './QRCodeDisplay';
-import './PersonalDetailsForm.css';
+// Change this line
+import '../PersonalDetailsForm.css';
 
 function PersonalDetailsForm() {
   const [formData, setFormData] = useState({
